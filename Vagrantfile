@@ -14,7 +14,7 @@ Vagrant.configure('2') do |config|
         ansible.limit = hostname
         ansible.compatibility_mode = '2.0'
         ansible.verbose = false
-        ansible.playbook = 'ansible/main.yml'
-        ansible.vault_password_file = 'ansible/vault_password'
+        ansible.playbook = 'main.yml'
+        ansible.vault_password_file = 'secrets/vault_password'
    end
 end
