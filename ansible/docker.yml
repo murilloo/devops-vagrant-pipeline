@@ -1,0 +1,34 @@
+- name: add docker-ce repository
+  yum_repository:
+    name: docker-ce
+    baseurl: https://download.docker.com/linux/centos/7/$basearch/stable
+    description: docker-ce repository
+    gpgcheck: no
+
+- name: remove old docker installations
+  yum:
+    name:
+      - docker
+      - docker-common
+      - container-selinux
+      - docker-selinux
+      - docker-engine
+    state: absent
+
+- name: install docker 
+  yum:
+    name:
+      - docker-ce
+      - python-docker-py
+    state: latest
+
+- name: force systemd to reload
+  systemd:
+    daemon_reload: yes
+
+- name: make sure docker is enabled/started
+  systemd:
+    state: started
+    name: docker
+    enabled: yes
+
