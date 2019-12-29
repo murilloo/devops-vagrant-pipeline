@@ -4,7 +4,7 @@
     - import_tasks: "docker.yml"
     - import_tasks: "mariadb.yml"
       vars:
-        mariadb_username: app_user
+        mariadb_username: appuser
         mariadb_password: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           63623865623239336563626435613736323666626539666261653566326139346636393330643966
