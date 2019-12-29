@@ -1,5 +1,0 @@
-- name: Make sure docker is enabled/started
-  systemd:
-    state: started
-    name: docker
-    enable: yes

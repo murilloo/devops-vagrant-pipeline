@@ -2,7 +2,6 @@
   become: yes
   tasks:
     - import_tasks: "docker.yml"
-    - import_tasks: "config.yml"
     - import_tasks: "mariadb.yml"
       vars:
         mariadb_username: app_user
