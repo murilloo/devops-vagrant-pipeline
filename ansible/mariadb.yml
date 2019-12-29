@@ -1,0 +1,13 @@
+- name: create mariadb container 
+  docker_container:
+    image: mariadb:10.2.14
+    name: mariadb
+    state: started
+    restart: yes
+    ports:
+    - "33306:3306"
+    env:
+      MYSQL_USER: "{{ mariadb_username }}"
+      MYSQL_PASSWORD: "{{ mariadb_password }}"
+      MYSQL_ROOT_PASSWORD: "{{ mariadb_root_password }}"
+
