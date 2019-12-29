@@ -15,8 +15,8 @@ Example pipeline using Vagrant for provisioning a VM and Ansible to install Dock
 
 ## Running
 ```
-$ vangrant up --provider=libvirt
-$ vangrant ssh centos (to connect to the VM provisioned)
+$ vagrant up --provider=libvirt
+$ vagrant ssh centos (to connect to the VM provisioned)
 $ sudo docker ps (to see the containers running)
 $ sudo docker exec -it CONTAINER_ID bash (to connect to the container)
 ```
