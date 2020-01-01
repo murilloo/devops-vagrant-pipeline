@@ -2,8 +2,8 @@
 Example pipeline using Vagrant for provisioning a VM and Ansible to install Docker and to create a container on top of it.
 
 ## Requirements
-- Vangrant >= 2.2.5
-- Libvirt >= 5.1.0
+- Vagrant >= 2.2.5 (https://www.vagrantup.com/downloads.html)
+- Libvirt >= 5.1.0 (https://libvirt.org/sources/)
 
 ## Goals
 - Run MariaDB on a host with a secret user/password
