@@ -20,8 +20,3 @@ $ vagrant ssh centos (to connect to the VM provisioned)
 $ sudo docker ps (to see the containers running)
 $ sudo docker exec -it CONTAINER_ID bash (to connect to the container)
 ```
-## Requirements
-5
-- Vangrant >= 2.2.5
-6
-- Libvirt >= 5.1.0
