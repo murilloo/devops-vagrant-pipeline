@@ -7,6 +7,7 @@ Example pipeline using Vagrant for provisioning a VM and Ansible to install Dock
 - Python version = 3.7.5
 - Ansible = 2.9.2
 
+
 ## Goals
 - Run MariaDB on a host with a secret user/password
 - Provision a VM
