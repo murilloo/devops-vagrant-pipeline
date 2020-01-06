@@ -4,6 +4,8 @@ Example pipeline using Vagrant for provisioning a VM and Ansible to install Dock
 ## Requirements
 - Vagrant >= 2.2.5 (https://www.vagrantup.com/downloads.html)
 - Libvirt >= 5.1.0 (https://libvirt.org/sources/)
+- Python version = 3.7.5
+- Ansible = 2.9.2
 
 ## Goals
 - Run MariaDB on a host with a secret user/password
